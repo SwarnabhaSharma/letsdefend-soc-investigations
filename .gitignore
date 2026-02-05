@@ -1,0 +1,96 @@
+# Personal/Private Notes
+private/
+drafts/
+notes/
+*.draft.md
+*-draft.md
+*_draft.md
+
+# Sensitive Information
+*.secret
+*.key
+*.env
+credentials/
+sensitive/
+
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+temp/
+
+# Screenshots before processing
+raw_screenshots/
+unprocessed/
+
+# Large files (videos, big PCAPs)
+*.pcap
+*.pcapng
+*.mp4
+*.avi
+*.mov
+
+# Backup files
+*.bak
+*.backup
+*_backup.*
+
+# ================================
+# OS / System Files
+# ================================
+.DS_Store
+Thumbs.db
+
+# ================================
+# Editor / IDE Files
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ================================
+# Temporary / Log Files
+# ================================
+*.tmp
+*.log
+
+# ================================
+# Evidence & Large Files (SOC)
+# ================================
+evidence/
+screenshots/
+pcap/
+captures/
+exports/
+
+# ================================
+# Archives
+# ================================
+*.zip
+*.tar
+*.gz
+*.7z
+
+# ================================
+# Misc
+# ================================
+.env
