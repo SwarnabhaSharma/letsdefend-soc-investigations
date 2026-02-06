@@ -11,7 +11,7 @@
 - **MITRE ATT&CK (if applicable):** T1190 – Exploit Public-Facing Application
 
 **Brief Summary:**
-On the Log Management page, we filter by source IP address and detect all requests. When the requests were examined, it was determined that the attacker wanted to change the ID value and access information belonging to different users. When the request sizes are examined, there is a different response size for each user and the status code is 200. For this reason, the attack is considered to have been successful. Since the attack may have been successful, the device should be contained and escalated to Tier 2.
+On the Log Management page, we filter by source IP address and detect all requests. When the requests were examined, it was determined that the attacker wanted to change the ID value and access information belonging to different users. When the request sizes are examined, there is a different response size for each user and the status code is 200. For this reason, the attack is considered to have been successful. Since the attack may have been successful the incident should be escalated to Tier 2.
 
 ---
 
