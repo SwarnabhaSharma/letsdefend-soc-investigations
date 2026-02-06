@@ -4,7 +4,7 @@
 
 - **Platform:**
 - **Alert Name / ID:** SOC169 - Possible IDOR Attack Detected
-- **Alert Name / ID:** 119
+- **Event ID:** 119
 - **Category:** Web Attack
 - **Severity:** Medium
 - **Date & Time:** Feb, 28, 2022, 10:48 PM
@@ -43,11 +43,11 @@ On the Log Management page, we filter by source IP address and detect all reques
 ## 4. Findings & Evidence
 
 - Investigated the endpoint with the hostname EliotPRD and got the following information:
-- Domain: letsdefend.local
-- Bit Level: 64
-- OS: Windows Server 2019
-- Primary User: webadmin35
-- Client/Server: Server
+  - Domain: letsdefend.local
+  - Bit Level: 64
+  - OS: Windows Server 2019
+  - Primary User: webadmin35
+  - Client/Server: Server
 - Investigated log management for the IP 172.16.17.46 with destination address of 188.114.96.15 at the time of the and found the following information:
   - HTTP Response Status: 200
   - HTTP Response Size: 267
