@@ -2,7 +2,7 @@
 
 ## 1. Alert Overview
 
-- **Platform:**
+- **Platform:** LetsDefend SOC Environment
 - **Alert Name / ID:** SOC169 - Possible IDOR Attack Detected
 - **Event ID:** 119
 - **Category:** Web Attack
