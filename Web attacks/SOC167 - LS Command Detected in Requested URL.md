@@ -8,7 +8,7 @@
 - **Category:** Web Attack
 - **Severity:** High
 - **Date & Time:** Feb, 27, 2022, 12:36 AM
-- **MITRE ATT&CK (if applicable):** NA
+- **MITRE ATT&CK (if applicable):** T1059.004 – Command and Scripting Interpreter: Unix Shell
 
 **Brief Summary:**  
 When the Request URL is examined, it is seen that the word "skills" is searched on the LetsDefend Blog page. However, the letters "ls" at the end of the word caused the rule to be triggered incorrectly.
@@ -57,10 +57,11 @@ The requested URL observed was "https://letsdefend.io/blog/?s=skills
   - HTTP Response Size: 2577
 - VirusTotal Score: https://www.virustotal.com/gui/ip-address/172.16.17.46
 - AlienVault Report: https://otx.alienvault.com/browse/global/pulses?q=172.16.17.46&include_inactive=0&sort=-modified&page=1&limit=10&indicatorsSearch=172.16.17.46
-- The string ls was part of the legitimate search term “skills”
-- No command execution syntax or chaining was present
-- Browser history confirmed normal user behavior
-- No additional suspicious traffic or payloads were observed
+- The string ls was part of the legitimate search term “skills”.
+- No command execution syntax or chaining was present.
+- Browser history confirmed normal user behavior.
+- No additional suspicious traffic or payloads were observed.
+- Although the detection rule mapped to Unix shell command execution, further analysis confirmed no actual command execution attempt.
 - It was a false positive as the url requested happened to have the letters ls coincidentally which is what triggered an alert.
 
 ---
