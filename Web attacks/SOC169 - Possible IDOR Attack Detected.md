@@ -42,19 +42,17 @@ On the Log Management page, we filter by source IP address and detect all reques
 
 ## 4. Findings & Evidence
 
-- Investigated the endpoint with the hostname EliotPRD and got the following information:
+- Investigated the affected web server with the hostname WebServer1005 and obtained the following information:
   - Domain: letsdefend.local
   - Bit Level: 64
   - OS: Windows Server 2019
   - Primary User: webadmin35
   - Client/Server: Server
-- Investigated log management for the IP 172.16.17.46 with destination address of 188.114.96.15 at the time of the and found the following information:
+- Investigated log management for the IP 172.16.17.46 with destination address of 172.16.17.15 at the time of the and obtained the following information:
   - HTTP Response Status: 200
   - HTTP Response Size: 267
   - POST Parameters: ?user_id=5
   - In a span of 5 minutes, the convicted address attempted an IDOR attack 5 times and was successful each time.
-- VirusTotal Score: https://www.virustotal.com/gui/ip-address/134.209.118.137
-- AlienVault Report: https://otx.alienvault.com/indicator/ip/134.209.118.137
 
 Threat intelligence enrichment was not applicable, as IDOR attacks are logic-based vulnerabilities rather than reputation-based indicators.
 
@@ -70,7 +68,7 @@ However, no clear evidence confirmed exposure of sensitive or restricted data be
 
 ## 5. Incident Classification
 
-- **Final Verdict:** True Positive (Possible IDOR)
+- **Final Verdict:** True Positive
 - **Attack Stage (if any):** Initial Access
 
 ---
