@@ -3,7 +3,8 @@
 ## 1. Alert Overview
 
 - **Platform:** LetsDefend SOC Environment
-- **Alert Name / ID:** SOC167 / 117
+- **Alert Name / ID:** SOC167 - LS Command Detected in Requested URL
+- **Event ID:** 117
 - **Category:** Web Attack
 - **Severity:** High
 - **Date & Time:** Feb, 27, 2022, 12:36 AM
