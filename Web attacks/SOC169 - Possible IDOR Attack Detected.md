@@ -48,11 +48,11 @@ On the Log Management page, we filter by source IP address and detect all reques
   - OS: Windows Server 2019
   - Primary User: webadmin35
   - Client/Server: Server
-- Investigated log management for the IP 172.16.17.46 with destination address of 172.16.17.15 at the time of the and obtained the following information:
+- Investigated log management for the IP 134.209.118.137 with destination address of 172.16.17.15 at the time of the and obtained the following information:
   - HTTP Response Status: 200
   - HTTP Response Size: 267
   - POST Parameters: ?user_id=5
-  - In a span of 5 minutes, the convicted address attempted an IDOR attack 5 times and was successful each time.
+  - In a span of 5 minutes, the source IP attempted object identifier manipulation five times, all of which were successful.
 
 Threat intelligence enrichment was not applicable, as IDOR attacks are logic-based vulnerabilities rather than reputation-based indicators.
 
@@ -86,7 +86,7 @@ However, no clear evidence confirmed exposure of sensitive or restricted data be
 
 ## 7. Lessons Learned
 
-- The issue was escalated to the Application Security team, as the observed behavior indicated a server-side authorization flaw rather than endpoint compromise.Endpoint containment was not required.
+- The issue was escalated to the Application Security team, as the observed behavior indicated a server-side authorization flaw rather than endpoint compromise. Endpoint containment was not required.
 - IDOR vulnerabilities often bypass traditional security controls
 - Authorization checks must be enforced server-side for every object access
 - Behavioral analysis is critical for detecting logic-based web attacks
