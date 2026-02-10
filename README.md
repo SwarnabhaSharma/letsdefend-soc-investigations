@@ -38,7 +38,11 @@ For every alert, I follow a structured SOC workflow:
    - Clear justification for the decision  
 
 5. **Response & Closure**  
-   - Recommended actions and alert closure rationale  
+   - Recommended actions and alert closure rationale
+
+6. **Investigation Template**
+   - A reusable SOC investigation template is available in the `templates/` directory (`soc-investigation-template.yaml`).  
+   - This template standardizes alert triage, analysis, and closure documentation across investigations.
 
 This approach closely mirrors real-world SOC analyst workflows.
 
