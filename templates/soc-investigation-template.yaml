@@ -1,0 +1,12 @@
+letsdefend-soc-investigations/
+│
+├── templates/
+│   └── soc-investigation-template.yaml
+│
+├── Phishing/
+│   └── phishing-alert-1.md
+│
+├── Web-Attacks/
+│   └── web-attack-alert-1.md
+│
+└── README.md
